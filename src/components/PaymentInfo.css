@@ -1,0 +1,17 @@
+.payment-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.img1{
+    width:300px
+}
+
+@media(max-width:600px){
+    .payment-info{
+        fwidth:400px;
+        flex-wrap: wrap;
+        
+    }
+}
