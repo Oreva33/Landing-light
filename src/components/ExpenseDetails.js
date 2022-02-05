@@ -25,7 +25,7 @@ const ExpenseDetails = () => {
       </div>
 
       <div className="promotional-code">
-        <p>Promotional Code: Z4KXLM9A</p>
+        <p>Promotional Code:<span>Z4KXLM9A</span></p>
         <p>₦{promotionalCode}</p>
       </div>
       <HorizonLine />

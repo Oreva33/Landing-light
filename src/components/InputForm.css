@@ -1,10 +1,11 @@
 .input-form {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5%;
-  justify-content: flex-end;
-  width: 700px;
+  margin-left: 7%;
+  justify-content: flex-start;
+  width: 800px;
 }
+
 
 @media(max-width: 800px){
     .input-form{
@@ -16,34 +17,40 @@
 
 .first {
   height: 60px;
-  width: 200px;
+  width: 300px;
   margin-right: 100px;
-  background-color: rgb(197, 197, 238);
+  background-color: rgb(240, 238, 238);
+  margin-bottom: 10%;
 }
 
-.first-label{
+.first-label, .second-label,.third-label,.fourth-label{
     color: black;
+    margin-bottom: 5%;
+    margin-top: 10%;
 }
 
 .second {
   height: 60px;
-  width: 200px;
+  width: 300px;
   margin-right: 100px;
-  background-color: rgb(197, 197, 238);
+  background-color: rgb(240, 238, 238);
+  margin-bottom: 10%;
 }
 
 .third {
   height: 60px;
-  width: 200px;
+  width: 300px;
   margin-right: 100px;
-  background-color: rgb(197, 197, 238);
+  background-color: rgb(240, 238, 238);
+  margin-bottom: 10%;
 }
 
 .fourth {
   height: 60px;
-  width: 200px;
+  width: 300px;
   margin-right: 100px;
-  background-color: rgb(197, 197, 238);
+  background-color: rgb(240, 238, 238);
+  margin-bottom: 10%;
 }
 label {
   display: block;
@@ -51,12 +58,13 @@ label {
 
 .button-1 {
   display: block;
-  padding: 0px 200px;
+  padding: 5px 200px;
   margin: auto;
-  margin-top: 30px;
   font-size: 28px;
   white-space: nowrap;
   text-align: center;
+  background-color: blue;
+  color: white;
 }
 
 @media(max-width: 800px){
@@ -84,4 +92,28 @@ label {
   color: red;
 }
 
+.fifth{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fifth p {
+font-weight: 50;
+font-size: 16px;
+margin-left: 5%;
+}
+
+.fifth img {
+position: relative;
+top: 30%;
+    }
+
+    @media(max-width: 800px){
+        .fifth img {
+            position: relative;
+            top: 37px;
+                }
+    }
+    
 

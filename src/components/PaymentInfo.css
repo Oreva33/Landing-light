@@ -4,13 +4,22 @@
     margin-bottom: 2%;
 }
 
+.payment-info div p {
+ font-weight: 50;
+ color: grey;
+}
+
+.payment-info div h1 {
+    font-weight: 650;
+   }
+
 .img1{
     width:300px
 }
 
 @media(max-width:600px){
     .payment-info{
-        fwidth:400px;
+        width:400px;
         flex-wrap: wrap;
         
     }

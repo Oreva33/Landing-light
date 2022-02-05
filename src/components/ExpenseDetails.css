@@ -10,10 +10,20 @@
     font-weight: 500;
 }
 
+.estimated-tax span button {
+    background-color: blue;
+    color: white;
+}
+
 .promotional-code{
     display: flex;
     justify-content: space-between;
     font-weight: 500;
+}
+
+.promotional-code p span {
+    font-weight: 50;
+    color: grey;
 }
 
 .button-2 {
@@ -24,4 +34,9 @@
 .total-size{
     font-size: 20px;
     font-weight: 800;
+}
+
+div p {
+    font-weight: 650;
+    font-size: 21px;
 }
