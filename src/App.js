@@ -16,8 +16,8 @@ const App = () => {
   }
 
   const cardNo = inputData.cardNum
-  const expedDate = [inputData.expiredDate]
-  console.log(expedDate)
+  const expedDate = inputData.expiredDate
+  //console.log(expedDate)
   return (
     <div className="app">
       <Header />
