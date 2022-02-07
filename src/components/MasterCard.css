@@ -1,6 +1,6 @@
 .card {
-    height: 300px;
-    width: 500px;
+    height: 250px;
+    width: 400px;
     background-image: linear-gradient(40deg, rgb(149, 62, 59), #a523b6);
     padding: 15px;
     display: flex;
@@ -55,6 +55,11 @@
 
   .st-item {
     width: 45%;
+  }
+
+  .st-item p {
+font-size: 16px;
+font-weight: 50;
   }
 
   .last {

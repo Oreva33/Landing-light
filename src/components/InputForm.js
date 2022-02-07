@@ -1,22 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./InputForm.css";
-import circle from "../media/multiCircle.PNG";
 
 const InputForm = (props) => {
-  const [cardNo, setcardNo] = useState("");
+  const [cardNo, setcardNo] = useState("4324  5433 9382 1030");
   const [expDate, setcexpDate] = useState("");
   const [error, seterror] = useState(false);
   const [secode, setsecode] = useState("");
   const [postcode, setpostcode] = useState("");
+  useEffect(() => {
+    const data = {
+      cardNum: "4324543393821030",
+      expiredDate: expDate,
+    };
+
+    props.onData(data);
+  // eslint-disable-next-line 
+},[] );
 
   const cardNumberHandler = (event) => {
     setcardNo(event.target.value);
     seterror(false);
+    const data = {
+      cardNum: event.target.value,
+      expiredDate: expDate,
+    };
+
+    props.onData(data);
+    if (data.cardNum.length < 12 || data.cardNum.length > 12) {
+      seterror(true);
+    }
   };
 
   const expirationDateHandler = (event) => {
-    setcexpDate(event.target.value);
+    setcexpDate( event.target.value);
+    //console.log(expDate)
+    //const datee = expDate
+    //console.log(typeof datee.toLocaleDateString())
   };
+
+
+
 
   const securitycodeHandler = (event) => {
     setsecode(event.target.value);
@@ -58,6 +81,7 @@ const InputForm = (props) => {
             type="number"
             value={cardNo}
             onChange={cardNumberHandler}
+            placeholder={cardNo}
           />
         </div>
 
@@ -83,6 +107,7 @@ const InputForm = (props) => {
             type="text"
             value={secode}
             onChange={securitycodeHandler}
+            placeholder="420"
           />
         </div>
         <div>
@@ -95,11 +120,16 @@ const InputForm = (props) => {
             type="text"
             value={postcode}
             onChange={postalcodeHandler}
+            placeholder="10119"
           />
         </div>
         <div className="fifth">
-          <img src={circle} alt="radio button" />
-          <p className="fifth-label">Use this card for next time purchase</p>
+          <div className="inner-fifth">
+          <input id="fifth" name="fifth" type="radio" />
+          <label className="fifth-label" htmlFor="fifth">
+            Use this card for next time purchase
+          </label>
+          </div>
           <button id="fifth" className="button-1" type="submit">
             Add Card
           </button>

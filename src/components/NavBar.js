@@ -16,10 +16,10 @@ const NavBar = () => {
         <span>
           <a href="http://www.google.com/">BOOKINGS</a>
         </span>
-      </div>
-      <span>
+        <span>
         <img src={avatar} alt="profile pics" />
       </span>
+      </div>
     </react.Fragment>
   );
 };

@@ -4,6 +4,9 @@ import simcard from "../media/simcard.PNG";
 
 
 const MasterCard = (props) => {
+//const date = props.date.getMonth();
+//console.log(date)
+
   //console.log(typeof props.cardNumber);
   let x = props.cardNumber;
   let newNumber = "";
@@ -11,7 +14,7 @@ const MasterCard = (props) => {
      newNumber = " "
   } else {
     let neww = x.split("");
-    for (let y = 0; y < 3; y++) {
+    for (let y = 0; y < 4; y++) {
       const z = neww.splice(neww.length - 4, neww.length);
       const q = z.join("") + " ";
       newNumber = q + newNumber;

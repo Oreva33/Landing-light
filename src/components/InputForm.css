@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   margin-left: 7%;
   justify-content: flex-start;
-  width: 800px;
+  width: 650px;
 }
 
 
@@ -18,9 +18,11 @@
 .first {
   height: 60px;
   width: 300px;
-  margin-right: 100px;
+  margin-right: 25px;
   background-color: rgb(240, 238, 238);
   margin-bottom: 10%;
+  border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .first-label, .second-label,.third-label,.fourth-label{
@@ -32,25 +34,31 @@
 .second {
   height: 60px;
   width: 300px;
-  margin-right: 100px;
+  margin-right: 25px;
   background-color: rgb(240, 238, 238);
   margin-bottom: 10%;
+  border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .third {
   height: 60px;
   width: 300px;
-  margin-right: 100px;
+  margin-right: 25px;
   background-color: rgb(240, 238, 238);
   margin-bottom: 10%;
+  border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .fourth {
   height: 60px;
   width: 300px;
-  margin-right: 100px;
+  margin-right: 25px;
   background-color: rgb(240, 238, 238);
   margin-bottom: 10%;
+  border: 1px solid grey;
+    border-radius: 5px;
 }
 label {
   display: block;
@@ -65,6 +73,8 @@ label {
   text-align: center;
   background-color: blue;
   color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
 }
 
 @media(max-width: 800px){
@@ -79,7 +89,8 @@ label {
       }
 
 .first, .second,.third,.fourth{
-    margin-left: 10%;
+    margin-left: 0px;
+    width: 200px;
 }
 }
 
@@ -98,16 +109,10 @@ label {
     align-items: flex-start;
 }
 
-.fifth p {
-font-weight: 50;
-font-size: 16px;
-margin-left: 5%;
+.inner-fifth{
+  display: flex;
+  flex-direction: row;
 }
-
-.fifth img {
-position: relative;
-top: 30%;
-    }
 
     @media(max-width: 800px){
         .fifth img {
